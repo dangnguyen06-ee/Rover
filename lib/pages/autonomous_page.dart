@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'gesture_camera_page.dart';
+import 'autonomous/gesture_camera_page.dart';
 
 /// Autonomous mounting control screen. This is the one page that's actually
 /// wired up: it opens the live gesture-recognition camera feed you already

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../widgets/gesture_camera_view.dart';
+import '../../widgets/gesture_camera_view.dart';
 
 /// Full-screen live feed: native camera preview + MediaPipe gesture
 /// recognition, with the recognized gesture/confidence overlaid at the
