@@ -5,7 +5,7 @@ import '../../widgets/gesture_camera_view.dart';
 /// recognition, with the recognized gesture/confidence overlaid at the
 /// bottom. This is the page reached from Autonomous Mounting Control.
 class GestureCameraPage extends StatefulWidget {
-  const GestureCameraPage({super.key});
+const GestureCameraPage({super.key});
 
   @override
   State<GestureCameraPage> createState() => _GestureCameraPageState();
