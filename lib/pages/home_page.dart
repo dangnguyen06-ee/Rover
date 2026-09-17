@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'home/home_project_page.dart';
-import 'home/home_team_page.dart';
-import 'home/home_more_page.dart';
+import 'package:vision_sandbox/pages/home/welcome_page.dart';
+import 'home/welcome_page.dart';
+import 'home/project_page.dart';
+import 'home/team_page.dart';
+import 'home/more_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -13,7 +15,7 @@ class HomePage extends StatefulWidget {
 class _HomePage extends State<HomePage> {
   final PageController _pageController = PageController();
   int _currentIndex = 0;
-  static const List<String> _titles = ['Project Information', 'Meet Our Team!!!', 'Moreeeeeeeeee'];// List of titles corresponding to each page
+  static const List<String> _titles = ['Home Page','Project Page', 'Team Page', 'Moreeeeeeeeee'];// List of titles corresponding to each page
   // Direction of slide animation: 
   // 1-> from the right (next page)->title enters from the Right
   // -1 -> from the left (previous page)->title enters from the Left
@@ -99,7 +101,8 @@ class _HomePage extends State<HomePage> {
             _currentIndex = index;
           });
         },
-        children: const [
+        children: const[
+          WelcomePage(),
           ProjectPage(),
           TeamPage(),
           MorePage(),
